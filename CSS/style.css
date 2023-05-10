@@ -40,7 +40,6 @@ h1,h2,h3,p{
     font-weight: bold;
     border-radius: .4rem;
     text-align: center;
-    width: 15%;
 }
 .boton__secundario{
     background-color: transparent;
@@ -51,7 +50,6 @@ h1,h2,h3,p{
     border: 1px solid #FFFFFF;
     border-radius: 4px;
     text-align: center;
-    width: 15%;
 }
 
 /* Navegacion principal */
@@ -81,7 +79,7 @@ h1,h2,h3,p{
     background-image: url(../img/Guardia-de-Seguridad-OSC.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 720px;
+    height: 100vh;
     position: relative;
     padding-top: 77.7px;
 }
@@ -92,7 +90,6 @@ h1,h2,h3,p{
     grid-template-columns: repeat(2,1fr);
     max-width: 128rem;
     margin: 0 auto ;
-    /* align-items: left; */
 }
 
 .first-section{
@@ -102,4 +99,43 @@ h1,h2,h3,p{
 .first-section h2{
     font-size: 3.8rem;
     background-color: var(--blue);
+}
+.botones__hero{
+    display: flex;
+    gap: 1rem;
+}
+.botones__hero a{
+    display: flex;
+    width: 26%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Servicios */
+
+.servicios h2,h3{
+    margin: 0;
+}
+
+/* Slider */
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
