@@ -7,6 +7,20 @@
     --fontPrincipal: 'acumin-pro', sans-serif;
 }
 
+/* Fonts */
+@font-face {
+    font-family: acuminPro;
+    src: url(/fonts/AcuminPro.otf);
+}
+@font-face {
+    font-family: acuminProBold;
+    src: url(/fonts/AcuminPro-Bold.otf);
+}
+@font-face {
+    font-family: acuminProLight;
+    src: url(/fonts/AcuminPro-Light.otf);
+}
+
 /* Globales */
 html{
     font-size: 62.5%;
@@ -18,7 +32,7 @@ html{
 }
 body{
     font-size: 16px; /* 1rem = 10px */
-    font-family: var(--fontPrincipal);
+    font-family: acuminProLight;
     background-color: var(--darkGray);
 }
 h1,h2,h3,p{
@@ -40,6 +54,7 @@ h1,h2,h3,p{
     font-weight: bold;
     border-radius: .4rem;
     text-align: center;
+    font-family: acuminPro;
 }
 .boton__secundario{
     background-color: transparent;
@@ -113,6 +128,7 @@ h1,h2,h3,p{
     background-color: var(--blue);
     margin-bottom: 0;
     padding: 10px;
+    font-family: acuminPro;
 }
 .first-section p{
     font-size: 21px;
