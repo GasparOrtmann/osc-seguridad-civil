@@ -17,8 +17,16 @@
     src: url(/fonts/AcuminPro-Bold.otf);
 }
 @font-face {
+    font-family: acuminProSemiBold;
+    src: url(/fonts/AcuminPro-Semibold.otf);
+}
+@font-face {
     font-family: acuminProLight;
     src: url(/fonts/AcuminPro-Light.otf);
+}
+@font-face {
+    font-family: acuminProMedium;
+    src: url(/fonts/AcuminPro-Medium.otf);
 }
 
 /* Globales */
@@ -32,7 +40,7 @@ html{
 }
 body{
     font-size: 16px; /* 1rem = 10px */
-    font-family: acuminProLight;
+    font-family: acuminPro;
     background-color: var(--darkGray);
 }
 h1,h2,h3,p{
@@ -51,20 +59,20 @@ h1,h2,h3,p{
     color: var(--white);
     text-decoration: none;
     padding: 1rem 1rem;
-    font-weight: bold;
     border-radius: .4rem;
     text-align: center;
-    font-family: acuminPro;
+    justify-content: center;
+    font-weight: 700;
 }
 .boton__secundario{
     background-color: transparent;
     color: var(--white);
     text-decoration: none;
     padding: 1rem 1rem;
-    font-weight: bold;
     border: 1px solid #FFFFFF;
     border-radius: 4px;
     text-align: center;
+    font-weight: 700;
 }
 
 /* Navegacion principal */
@@ -104,7 +112,7 @@ h1,h2,h3,p{
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 40%, var(--darkGray) 90%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 40%, var(--darkGray) 90%), linear-gradient(to left, rgba(0,0,0,0) 50%, var(--darkGray) 110%);
     z-index: 0;
 }
 
@@ -115,11 +123,13 @@ h1,h2,h3,p{
     max-width: 128rem;
     margin: 0 auto ;
     height: 1507px;
+    z-index: 1;
 }
 
 .first-section{
     max-width: 64rem;
     padding-top: 250px;
+    z-index: 1;
 }
 
 .first-section h2{
@@ -128,14 +138,16 @@ h1,h2,h3,p{
     background-color: var(--blue);
     margin-bottom: 0;
     padding: 10px;
-    font-family: acuminPro;
+    font-family: acuminProBold;
 }
 .first-section p{
     font-size: 21px;
+    font-weight: lighter;
 }
 .botones__hero{
     display: flex;
     gap: 1rem;
+    z-index: 1;
 }
 .botones__hero a{
     display: flex;
@@ -147,6 +159,11 @@ h1,h2,h3,p{
 }
 .boton:hover{
     cursor: pointer;
+    color: var(--white)
+}
+.boton__secundario:hover{
+    cursor: pointer;
+    color: var(--white)
 }
 
 /* Servicios */
@@ -161,6 +178,7 @@ h1,h2,h3,p{
 .servicios h3{
     text-transform: uppercase;
     font-size: 18px;
+    margin-bottom: .5rem;
 }
 
 .servicios{
@@ -169,21 +187,33 @@ h1,h2,h3,p{
     z-index: 1;
 }
 
-/* Slider */
-
-swiper-container {
-    width: 100%;
-    height: 90%;
-    
-}
-
-swiper-slide {
-    font-size:  24px;
-    display: flex;
+/* Swiper custom */
+.swiper-custom {
+    margin-top: 5%;
     position: relative;
-    margin-right: 0;
 }
-swiper-slide:before {
+
+.swiper-slide {
+    text-align: center;
+    font-size: 24px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: left;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide:before {
     content: '';
     position:absolute;
     top:0;
@@ -194,18 +224,39 @@ swiper-slide:before {
     z-index: 1;
 }
 
-swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    margin-right: 0;
-}
-
-swiper-slide p {
+.swiper-slide p {
     color: var(--white);
     position: absolute;
     bottom: 0;
     margin-left: 2rem;
     z-index: 1;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.swiper-button-prev, .swiper-button-next {
+    top:unset !important;
+    bottom:-80px;
+    position: absolute;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.swiper-button-prev::after, .swiper-button-next::after{
+    color: rgba(99,88,238,1);
+    font-size: 18px;
+}
+
+.swiper-button-prev{
+    left: 0;
+}
+
+.swiper-button-next {
+    right: auto;
+    left: 45px;
 }

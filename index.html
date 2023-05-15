@@ -8,6 +8,9 @@
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://use.typekit.net/umm0spu.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preload" href="css/style.css" as="style">
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -49,17 +52,52 @@
             <div class="servicios">
                 <h3>Servicios</h3>
                 <h2 class="titulo">Garantizamos tu seguridad</h2>
-                <!-- Slider -->
-                <!-- <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="4"
-                    space-between="0" free-mode="true"> -->
-                <swiper-container class="mySwiper" slides-per-view="4" centered-slides="false" space-between="30" pagination="true"
-                 navigation="true">
-                    <swiper-slide><img src=" https://swiperjs.com/demos/images/nature-1.jpg" /><p>Seguridad física</p></swiper-slide>
-                    <swiper-slide><img src=" https://swiperjs.com/demos/images/nature-1.jpg" /><p>Seguridad Electrónica</p></swiper-slide>
-                    <swiper-slide><img src=" https://swiperjs.com/demos/images/nature-1.jpg" /><p>Capacitaciones de seguridad</p></swiper-slide>
-                    <swiper-slide><img src=" https://swiperjs.com/demos/images/nature-1.jpg" /><p>Alta seguridad</p></swiper-slide>
-                    <swiper-slide><img src=" https://swiperjs.com/demos/images/nature-1.jpg" /><p>Seguridad física</p></swiper-slide>
-                </swiper-container>
+
+                <div class="swiper-custom">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/Guardia-de-Seguridad-OSC.webp" alt="" />
+                                <p>Seguridad física</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/Guardia-de-Seguridad-OSC.webp" alt="" />
+                                <p>Seguridad Electrónica</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/Guardia-de-Seguridad-OSC.webp" alt="" />
+                                <p>Capacitaciones de seguridad</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/Guardia-de-Seguridad-OSC.webp" alt="" />
+                                <p>Alta seguridad</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/Guardia-de-Seguridad-OSC.webp" alt="" />
+                                <p>Seguridad física</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="swiper-button-prev-1" class="swiper-button-prev"></div>
+                        <div id="swiper-button-next-1" class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <!-- <div class="swiper-custom">
+                    <div class="swiper">
+                        <swiper-container class="swiper-wrapper" slides-per-view="4" centered-slides="false" space-between="30" pagination="false"
+                        navigation="true">
+                        <swiper-slide class="swiper-slide"><img src=" https://swiperjs.com/demos/images/nature-1.jpg" /><p>Seguridad física</p></swiper-slide>
+                        <swiper-slide class="swiper-slide"><img src=" https://swiperjs.com/demos/images/nature-1.jpg" /><p>Seguridad Electrónica</p></swiper-slide>
+                        <swiper-slide class="swiper-slide"><img src=" https://swiperjs.com/demos/images/nature-1.jpg" /><p>Capacitaciones de seguridad</p></swiper-slide>
+                        <swiper-slide class="swiper-slide"><img src=" https://swiperjs.com/demos/images/nature-1.jpg" /><p>Alta seguridad</p></swiper-slide>
+                        <swiper-slide class="swiper-slide"><img src=" https://swiperjs.com/demos/images/nature-1.jpg" /><p>Seguridad física</p></swiper-slide>
+                        </swiper-container>   
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div> -->
+                
             </div>
             
         </div>
@@ -99,6 +137,13 @@
 
     <script src="https://kit.fontawesome.com/ce5101b7af.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 </html>
