@@ -143,6 +143,7 @@ h1,h2,h3,p{
 .first-section p{
     font-size: 21px;
     font-weight: lighter;
+    margin-top: 1rem;
 }
 .botones__hero{
     display: flex;
@@ -173,7 +174,7 @@ h1,h2,h3,p{
 }
 .servicios h2{
     font-size: 43px;
-    margin-bottom: 2rem;
+    margin-bottom: -5rem;
 }
 .servicios h3{
     text-transform: uppercase;
@@ -185,6 +186,27 @@ h1,h2,h3,p{
     margin-top: auto;
     margin-bottom: 20rem;
     z-index: 1;
+}
+
+/* Important numbers */
+.important-numbers{
+    max-width: 128rem;
+    margin: 0 auto;
+}
+.important-numbers__1{
+    display: grid;
+    grid-template-columns: 580px 700px;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+}
+.important-numbers h2{
+    font-family: acuminProBold;
+    font-size: 43px;
+}
+.important-numbers p{
+    font-family: acuminProLight;
+    font-size: 18px;
 }
 
 /* Swiper custom */
@@ -234,8 +256,8 @@ h1,h2,h3,p{
 
 .swiper-slide img {
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 305px;
+    height: 400px;
     object-fit: cover;
 }
 .swiper-button-prev, .swiper-button-next {
