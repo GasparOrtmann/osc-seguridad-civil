@@ -188,6 +188,11 @@ h1,h2,h3,p{
     z-index: 1;
 }
 
+hr.solid {
+    border-top: 3px solid #bbb;
+    margin: 3rem 0;
+  }
+
 /* Important numbers */
 .important-numbers{
     max-width: 128rem;
@@ -207,6 +212,22 @@ h1,h2,h3,p{
 .important-numbers p{
     font-family: acuminProLight;
     font-size: 18px;
+}
+
+.important-numbers__2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    text-align: center;
+    gap: 7rem;
+}
+.important-numbers__2 h2{
+    font-family: acuminProBold;
+    font-size: 60px;
+}
+.important-numbers__2 p{
+    font-family: acuminProLight;
+    font-size: 16px;
 }
 
 /* Swiper custom */
@@ -264,13 +285,13 @@ h1,h2,h3,p{
     top:unset !important;
     bottom:-80px;
     position: absolute;
-    background-color: white;
+    background-color: var(--black);
     height: 30px;
     width: 30px;
     border-radius: 50%;
 }
 .swiper-button-prev::after, .swiper-button-next::after{
-    color: rgba(99,88,238,1);
+    color: var(--white);
     font-size: 18px;
 }
 
