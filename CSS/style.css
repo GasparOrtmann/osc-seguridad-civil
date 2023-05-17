@@ -188,11 +188,6 @@ h1,h2,h3,p{
     z-index: 1;
 }
 
-hr.solid {
-    border-top: 3px solid #bbb;
-    margin: 3rem 0;
-  }
-
 /* Important numbers */
 .important-numbers{
     max-width: 128rem;
@@ -229,6 +224,11 @@ hr.solid {
     font-family: acuminProLight;
     font-size: 16px;
 }
+
+hr.solid {
+    border-top: 3px solid #bbb;
+    margin: 3rem 0;
+  }
 
 /* Swiper custom */
 .swiper-custom {
