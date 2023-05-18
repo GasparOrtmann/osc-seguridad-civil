@@ -1,8 +1,8 @@
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".mySwiper1", {
     slidesPerView: 2.5,
     spaceBetween: 10,
     slidesPerGroup: 1,
-    loop: false,
+    loop: true,
     loopFillGroupWithBlank: true,
     breakpoints: {
         1000: {
@@ -38,5 +38,23 @@ var swiper = new Swiper(".mySwiper", {
         delay: 3000,
       },
 
-      loop: true,
+});
+
+var swiper = new Swiper(".mySwiper2", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    
+    navigation: {
+        nextEl: "#swiper-button-next-2",
+        prevEl: "#swiper-button-prev-2",
+    },
+
+    autoplay: {
+        delay: 3000,
+      },
+
+
 });

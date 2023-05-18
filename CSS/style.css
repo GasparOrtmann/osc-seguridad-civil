@@ -230,6 +230,51 @@ hr.solid {
     margin: 3rem 0;
   }
 
+/* Clients */
+.clients{
+
+}
+.clients__bg{
+    
+}
+
+/* our clients */
+.our_clients{
+    max-width: 128rem;
+    margin: 0 auto;
+    display: flex;
+    padding: 4rem 0;
+}
+.our_clients__title{
+    width: 461px;
+    height: 126px;
+}
+.our_clients__title h2{
+    font-family: acuminProBold;
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    font-size: 43px;
+    line-height: 52px;
+}
+.our_clients__title h3{
+    font-family: acuminProBold;
+    grid-column: 1 / 3;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 22px;
+    margin-top: auto;
+}
+.our_clients__logos{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    width: 804px;
+    height: 155px;
+}
+.our_clients__logos img{
+    
+}
+
 /* Swiper custom */
 .swiper-custom {
     margin-top: 5%;
@@ -302,4 +347,31 @@ hr.solid {
 .swiper-button-next {
     right: auto;
     left: 45px;
+}
+
+/* swiperCustom2 */
+.clients swiper-slide:before {
+    content: '';
+    position:absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, #ffffff 80%);
+    z-index: 1;
+}
+
+.clients swiper-slide p {
+    color: var(--white);
+    position: absolute;
+    bottom: 0;
+    margin-left: 2rem;
+    z-index: 1;
+}
+
+.clients swiper-slide img {
+    display: block;
+    width: 1000px;
+    height: 400px;
+    object-fit: cover;
 }
