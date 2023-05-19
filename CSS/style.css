@@ -303,8 +303,7 @@ hr.solid {
     font-size: 18px;
 }
 .faq__boxes{
-    display: grid;
-    grid-template-rows: repeat(5,1fr);
+    position: relative;
 }
 .faq__box{
     display: flex;
@@ -320,10 +319,24 @@ hr.solid {
     line-height: 25px;
     font-weight: 700;
     margin: auto 0;
+    display: block;
+    position: relative;
 }
 .faq__box svg{
     color: var(--white);
     margin-left: auto;
+    cursor: pointer;
+}
+/* desplegable */
+.faq__answer{
+    position: relative;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+.faq__active.active .faq__answer{
+    height: 150px;
 }
 
 /* Swiper custom */
