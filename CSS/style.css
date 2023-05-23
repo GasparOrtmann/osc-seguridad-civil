@@ -316,6 +316,7 @@ hr.solid {
     padding: 15px;
     margin: 15px 0;
     align-items: center;
+    cursor: pointer;
 }
 .faq__box h4{
     font-family: acuminPro;
@@ -371,6 +372,15 @@ hr.solid {
 .faq__active.active .faq__box{
     background-color: #1257E0;
     border: none;
+}
+.faq__active.active .icon-tabler-square-rounded-plus-filled{
+    display: none;
+}
+.icon-tabler-square-rounded-minus{
+    display: none;
+}
+.faq__active.active .icon-tabler-square-rounded-minus{
+    display: block;
 }
 
 /* Swiper custom */
