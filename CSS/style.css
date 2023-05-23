@@ -166,6 +166,9 @@ h1,h2,h3,h4,p{
     cursor: pointer;
     color: var(--white)
 }
+.botones_swiper1{
+    margin-top: -2rem;
+}
 
 /* Servicios */
 
@@ -184,7 +187,7 @@ h1,h2,h3,h4,p{
 
 .servicios{
     margin-top: auto;
-    margin-bottom: 20rem;
+    margin-bottom: 25rem;
     z-index: 1;
 }
 
@@ -301,6 +304,7 @@ hr.solid {
     font-family: acuminPro;
     line-height: 22px;
     font-size: 18px;
+    margin-bottom: -4rem;
 }
 .faq__boxes{
     position: relative;
@@ -327,6 +331,13 @@ hr.solid {
     margin-left: auto;
     cursor: pointer;
 }
+.faq__box img{
+    color: var(--white);
+    margin-left: auto;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+}
 /* desplegable */
 .faq__answer{
     position: relative;
@@ -336,7 +347,30 @@ hr.solid {
     overflow-y: auto;
 }
 .faq__active.active .faq__answer{
+    border: 1px solid #C9C9C9;
+    border-radius: 4px;
+    margin-top: -1.5rem;
+    text-align: left;
+    padding: 15px;
     height: 150px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.faq__active:nth-child(2).active .faq__answer{
+    height: 150px;
+}
+.faq__active:nth-child(3).active .faq__answer{
+    height: 177px;
+}
+.faq__active:nth-child(4).active .faq__answer{
+    height: 96px;
+}
+.faq__active:nth-child(5).active .faq__answer{
+    height: 123px;
+}
+.faq__active.active .faq__box{
+    background-color: #1257E0;
+    border: none;
 }
 
 /* Swiper custom */
