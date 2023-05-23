@@ -241,6 +241,65 @@ hr.solid {
     
 }
 
+/* about us */
+.about-us{
+    height: 796px;
+}
+.about-content{
+    max-width: 128rem;
+    margin: 0 auto;
+    display: flex;
+    padding: 66px;
+}
+.about-img img:nth-child(1){
+    position: absolute;
+}
+.about-img img:nth-child(2){
+    width: 500px;
+    height: 629.53px;
+}
+.about-text{
+    display: grid;
+    width: 640px;
+    height: 596px;
+    gap: 15px;
+    margin-left: 60px;
+}
+.about-text h3{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: -1rem;
+}
+.about-text h2{
+    font-family: acuminProBold;
+    font-size: 43px;
+    margin-bottom: -1rem;
+}
+.about-text p{
+    font-family: acuminProLight;
+    font-size: 18px;
+}
+.soluciones{
+    width: 640px;
+}
+.soluciones h4{
+    font-family: acuminProBold;
+    font-size: 21px;
+    margin-bottom: -.1rem;
+}
+.soluciones svg{
+    color: #fff;
+}
+.soluciones__btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    width: 200px;
+    height: 42px;
+}
+
+
 /* our clients */
 .our_clients{
     background-color: var(--blue);
@@ -250,11 +309,14 @@ hr.solid {
     margin: 0 auto;
     display: flex;
     padding: 4rem 0;
+    justify-content: center;
+    align-items: center;
 }
 .our_clients__title{
     width: 461px;
     height: 155px;
     margin: 2rem 0;
+    display: grid;
 }
 .our_clients__title h2{
     font-family: acuminProBold;
