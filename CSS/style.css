@@ -153,7 +153,7 @@ h1,h2,h3,h4,p{
 .botones__hero a{
     display: flex;
     width: 26%;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
     gap: 1rem;
     z-index: 1;
@@ -227,6 +227,10 @@ h1,h2,h3,h4,p{
     font-family: acuminProLight;
     font-size: 16px;
 }
+.counter{
+    display: flex;
+    justify-content: center;
+}
 
 hr.solid {
     border-top: 3px solid #bbb;
@@ -250,11 +254,15 @@ hr.solid {
     margin: 0 auto;
     display: flex;
     padding: 66px;
+    justify-content: center;
+    align-items: center;
 }
-.about-img img:nth-child(1){
+.logo-png{
     position: absolute;
-}
-.about-img img:nth-child(2){
+    object-position: 100px -10px;
+} 
+.about-content img{
+    position: inherit;
     width: 500px;
     height: 629.53px;
 }
@@ -289,6 +297,7 @@ hr.solid {
 }
 .soluciones svg{
     color: #fff;
+    margin-bottom: .5rem;
 }
 .soluciones__btn{
     display: flex;
@@ -445,6 +454,54 @@ hr.solid {
     display: block;
 }
 
+
+/* call us */
+.call-us{
+    height: 240px;
+    background-color: var(--blue);
+}
+.call-us-content{
+    max-width: 128rem;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+.call-us-title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.call-us-title h3{
+    font-family: acuminProBold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 52px;
+}
+.call-us-title a{
+    margin-left: auto;
+}
+.botones__call-us a{
+    display: flex;
+    width: 170px;
+    height: 42px;
+    align-items: baseline;
+    justify-content: center;
+    gap: 1rem;
+    z-index: 1;
+}
+.call-us .solid{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.call-us-text{
+    width: 586px;
+}
+.call-us-text p{
+    font-family: acuminProLight;
+}
+
+
+
 /* Swiper custom */
 .swiper-custom {
     margin-top: 5%;
@@ -452,7 +509,6 @@ hr.solid {
 }
 
 .swiper-slide {
-    text-align: center;
     font-size: 24px;
     background: #fff;
 
