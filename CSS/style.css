@@ -537,16 +537,6 @@ hr.solid {
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, #2A334E 80%);
     z-index: 1;
 }
-.activo.active:before {
-    content: '';
-    position:absolute;
-    top:0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, #0240fc 80%);
-    z-index: 1;
-}
 
 .swiper-slide p {
     color: var(--white);
@@ -562,52 +552,94 @@ hr.solid {
     height: 400px;
     object-fit: cover;
 }
-.swiper-button-prev, .swiper-button-next {
+.botones_swiper1 .swiper-button-prev, .swiper-button-next {
     top:unset !important;
-    bottom:-80px;
+    bottom: -80px;
     position: absolute;
     background-color: var(--black);
     height: 30px;
     width: 30px;
     border-radius: 50%;
 }
-.swiper-button-prev::after, .swiper-button-next::after{
+.botones_swiper1 .swiper-button-prev::after, .swiper-button-next::after{
     color: var(--white);
     font-size: 18px;
 }
 
-.swiper-button-prev{
+.botones_swiper1 .swiper-button-prev{
     left: 0;
 }
 
-.swiper-button-next {
+.botones_swiper1 .swiper-button-next {
     right: auto;
     left: 45px;
 }
 
 /* swiperCustom2 */
-.clients swiper-slide:before {
-    content: '';
-    position:absolute;
-    top:0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, #ffffff 80%);
-    z-index: 1;
+.clients .swiper-custom{
 }
-
-.clients swiper-slide p {
-    color: var(--white);
-    position: absolute;
-    bottom: 0;
-    margin-left: 2rem;
-    z-index: 1;
+.clients .swiper-slide {
+    background-color: var(--blue);
 }
-
-.clients swiper-slide img {
+.clients .swiper-slide:before {
+    background: none;
+}
+.clients .swiper-content{
+    height: 945.24px;
+}
+.clients .swiper-text{
+    display: flex;
+    padding: 60px 0;
+    max-width: 128rem;
+    margin: 0 auto;
+}
+.clients .swiper-text-title{
+    margin-bottom: auto;
+    width: 850px;
+}
+.clients .swiper-text-body{
+}
+.clients .swiper-text h2 {
+    font-family: acuminProBold;
+    font-size: 31px;
+}
+.clients .swiper-text h3 {
+    font-family: acuminProLight;
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+.clients .swiper-text p {
+    font-size: 18px;
+    font-family: acuminProLight;
+    position: relative;
+    bottom: 0;
+    margin-left: 0;
+}
+.mySwiper2 .swiper-slide img {
     display: block;
-    width: 1000px;
-    height: 400px;
+    width: 1920px;
+    height: 620px;
     object-fit: cover;
+}
+/* .btns-slider-custom .swiper-button-prev, .swiper-button-next {
+    top:unset !important;
+    bottom: 0;
+    position: absolute;
+    background-color: var(--black);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+} */
+.btns-slider-custom .swiper-button-prev::after, .swiper-button-next::after{
+    color: var(--white);
+    font-size: 18px;
+}
+
+.btns-slider-custom .swiper-button-prev{
+    left: 1800px;
+}
+
+.btns-slider-custom .swiper-button-next {
+    left: auto;
+    right: 45px;
 }
