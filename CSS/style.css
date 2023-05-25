@@ -1,6 +1,7 @@
 :root{
     --darkBlue: #131829;
     --blue: #2A334E;
+    --lightBlue: #3E4C74;
     --black: #212121;
     --white: #ffffff;
     --darkGray: #373737;
@@ -238,11 +239,108 @@ hr.solid {
   }
 
 /* Clients */
-.clients{
-
+/* swiperCustom2 */
+.clients .swiper-slide {
+    background-color: var(--blue);
 }
-.clients__bg{
+.clients .swiper-slide:before {
+    background: none;
+}
+.clients .swiper-content{
+    height: 900px;
+}
+.clients .swiper-text{
+    display: flex;
+    padding-top: 60px;
+    max-width: 128rem;
+    margin: 0 auto;
+}
+.clients .swiper-text-title{
+    margin-bottom: auto;
+    width: 280px;
+}
+.clients .swiper-text-body{
+    width: 1000px;
+}
+.clients .swiper-text h2 {
+    font-family: acuminProBold;
+    font-size: 31px;
+}
+.clients .swiper-text h3 {
+    font-family: acuminProLight;
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+.clients .swiper-text p {
+    font-size: 18px;
+    font-family: acuminProLight;
+    position: relative;
+    bottom: 0;
+    margin-left: 0;
+}
+.mySwiper2 .swiper-slide img {
+    display: block;
+    width: 1920px;
+    height: 620px;
+    object-fit: cover;
+}
+
+.btns-slider-custom .swiper-button-prev, .swiper-button-next {
+    top:unset !important;
+    position: absolute;
+    background-color: var(--black);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.btns-slider-custom{
+    height: 45.24px;
+    background-color: var(--blue);
+}
+.btns-slider-custom-content{
+    max-width: 128rem;
+    margin: 0 auto;
+}
+.btns-slider-custom .swiper-button-prev::after, .swiper-button-next::after{
+    color: var(--white);
+    font-size: 18px;
+}
+.btns-slider-custom-content .swiper-button-next, .swiper-button-prev{
+    margin-top: auto;
     
+}
+.btns-slider-custom .swiper-button-prev{
+    margin-left: 142rem;
+}
+
+.btns-slider-custom .swiper-button-next {
+    left: auto;
+    margin-right: 40rem;
+}
+.clients .swiper-banner-text{
+    position: absolute;
+    top: 507px;
+    left: 316px;
+}
+.clients .swiper-banner-text-content{
+    width: 250px;
+    height: 113px;
+    background: var(--lightBlue);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.clients .swiper-banner-text-content b{
+    font-size: 45px;
+    font-family: acuminPro;
+    font-weight: 600;
+}
+.clients .swiper-banner-text-content h4{
+    font-size: 14px;
+    font-family: acuminProLight;
+    line-height: 20px;
+    margin-top: revert-layer;
 }
 
 /* about us */
@@ -581,83 +679,3 @@ hr.solid {
     left: 45px;
 }
 
-/* swiperCustom2 */
-.clients .swiper-custom{
-}
-.clients .swiper-slide {
-    background-color: var(--blue);
-}
-.clients .swiper-slide:before {
-    background: none;
-}
-.clients .swiper-content{
-    height: 900px;
-}
-.clients .swiper-text{
-    display: flex;
-    padding-top: 60px;
-    max-width: 128rem;
-    margin: 0 auto;
-}
-.clients .swiper-text-title{
-    margin-bottom: auto;
-    width: 280px;
-}
-.clients .swiper-text-body{
-    width: 1000px;
-}
-.clients .swiper-text h2 {
-    font-family: acuminProBold;
-    font-size: 31px;
-}
-.clients .swiper-text h3 {
-    font-family: acuminProLight;
-    font-size: 18px;
-    margin-bottom: 1rem;
-}
-.clients .swiper-text p {
-    font-size: 18px;
-    font-family: acuminProLight;
-    position: relative;
-    bottom: 0;
-    margin-left: 0;
-}
-.mySwiper2 .swiper-slide img {
-    display: block;
-    width: 1920px;
-    height: 620px;
-    object-fit: cover;
-}
-
-.btns-slider-custom .swiper-button-prev, .swiper-button-next {
-    top:unset !important;
-    position: absolute;
-    background-color: var(--black);
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-}
-.btns-slider-custom{
-    height: 45.24px;
-    background-color: var(--blue);
-}
-.btns-slider-custom-content{
-    max-width: 128rem;
-    margin: 0 auto;
-}
-.btns-slider-custom .swiper-button-prev::after, .swiper-button-next::after{
-    color: var(--white);
-    font-size: 18px;
-}
-.btns-slider-custom-content .swiper-button-next, .swiper-button-prev{
-    margin-top: auto;
-    
-}
-.btns-slider-custom .swiper-button-prev{
-    margin-left: 142rem;
-}
-
-.btns-slider-custom .swiper-button-next {
-    left: auto;
-    margin-right: 40rem;
-}
