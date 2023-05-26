@@ -1,6 +1,7 @@
 :root{
     --darkBlue: #131829;
     --blue: #2A334E;
+    --darkBlue: #131829;
     --lightBlue: #3E4C74;
     --black: #212121;
     --white: #ffffff;
@@ -597,7 +598,79 @@ hr.solid {
     font-family: acuminProLight;
 }
 
+/* footer */
+footer{
+    /* height: 343px; */
+    background-color: var(--blue);
+}
+.footer-content{
+    max-width: 128rem;
+    margin: 0 auto;
+    padding: 60px;
+}
+.footer-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 96px;
+}
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 15px;
+}
+.footer-logo img{
+    width: 225px;
+    height: 45px;
+}
+.footer-text a{
+    font-family: acuminProLight;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--white);
+    text-decoration: none;
+}
+.footer-text h3{
+    font-family: acuminPro;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 25px;
+}
 
+.footer-secciones{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
+}
+.footer-legales{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
+}
+.footer-down{
+    background-color: var(--darkBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 63px;
+}
+.footer-down p{
+    margin: auto 0;
+    font-family: acuminProLight;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
 
 /* Swiper custom */
 .swiper-custom {
