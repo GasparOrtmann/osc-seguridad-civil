@@ -289,10 +289,10 @@ hr.solid {
 .btns-slider-custom .swiper-button-prev, .swiper-button-next {
     top:unset !important;
     position: absolute;
-    background-color: var(--black);
+    background-color: #000;
     height: 30px;
     width: 30px;
-    border-radius: 50%;
+    border-radius: 4px;
 }
 .btns-slider-custom{
     height: 45.24px;
@@ -730,10 +730,10 @@ footer{
 .botones_swiper1 .swiper-button-prev, .swiper-button-next {
     top:unset !important;
     position: absolute;
-    background-color: var(--black);
+    background-color: #000;
     height: 30px;
     width: 30px;
-    border-radius: 50%;
+    border-radius: 4px;
 }
 .bottom-80{
     bottom: -30px !important;
@@ -750,5 +750,9 @@ footer{
 .botones_swiper1 .swiper-button-next {
     right: auto;
     left: 45px;
+}
+
+.mySwiper1{
+    margin-right: 0;
 }
 
