@@ -5,8 +5,12 @@ var swiper = new Swiper(".mySwiper1", {
     loop: true,
     loopFillGroupWithBlank: true,
     breakpoints: {
-        1000: {
+        1366: {
             slidesPerView: 4,
+            spaceBetween: 20,
+        },
+        1280: {
+            slidesPerView: 3,
             spaceBetween: 20,
         },
 
