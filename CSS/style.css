@@ -358,10 +358,12 @@ hr.solid {
 }
 .logo-png{
     position: absolute;
-    object-position: 100px -10px;
+    z-index: 20;
+    margin-left: -100px;
+    margin-top: -52px;
 } 
-.about-content img{
-    position: inherit;
+.collage-img{
+    position: relative;
     width: 500px;
     height: 629.53px;
 }
@@ -522,7 +524,7 @@ hr.solid {
     margin-top: -1.5rem;
     text-align: left;
     padding: 15px;
-    height: 150px;
+    height: 177px;
     font-size: 18px;
     font-weight: 400;
 }
