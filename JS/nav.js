@@ -9,18 +9,16 @@ document.addEventListener('scroll', () => {
 })
 
 
-const nav = document.querySelector("#nav");
-const open = document.querySelector("#open");
-const close = document.querySelector("#close");
-const img = document.querySelector("#header");
-const navList = document.querySelector("#nav-list");
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-open.addEventListener("click", () => {
-    nav.classList.add("visible");
-    img.classList.add("shadow");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
 })
 
-navList.addEventListener("click", () => {
-    nav.classList.remove("visible");
-    img.classList.remove("shadow");
-})
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}))

@@ -98,8 +98,36 @@ h1,h2,h3,h4,p{
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.6);
 }
 
+.nav-container li{
+    list-style: none;
+}
+.nav-container a{
+    color: var(--white);
+    text-decoration: none;
+    /* margin: 0 1.5rem;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.6); */
+}
+
 .open-menu {
     display: none;
+    cursor: pointer;
+}
+
+.hamburger{
+    display: none;
+}
+
+.navbar{
+    /* display: none; */
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--white);
 }
 
 /* Botones menu mobile */
@@ -119,7 +147,7 @@ h1,h2,h3,h4,p{
     .nav-container{
        max-width: 75rem;
     }
-    .open-menu,
+    /* .open-menu,
     .close-menu{
         display: block;
         border: 0;
@@ -140,6 +168,40 @@ h1,h2,h3,h4,p{
         color: var(--white);
         display: flex;
         align-self: flex-end;
+    } */
+
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .navbar{
+        display: none;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0;
     }
 }
 
