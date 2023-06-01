@@ -112,7 +112,6 @@ h1,h2,h3,h4,p{
 @media (max-width: 834px) {
     .nav-bg{
         background-color: var(--darkBlue);
-        width: 75%;
     }
     .nav-list{
         display: none;
