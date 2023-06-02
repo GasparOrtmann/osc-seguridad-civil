@@ -104,8 +104,8 @@ h1,h2,h3,h4,p{
 .nav-container a{
     color: var(--white);
     text-decoration: none;
-    /* margin: 0 1.5rem;
-    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.6); */
+    margin: 0 1.5rem;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.6);
 }
 
 .open-menu {
@@ -147,28 +147,6 @@ h1,h2,h3,h4,p{
     .nav-container{
        max-width: 75rem;
     }
-    /* .open-menu,
-    .close-menu{
-        display: block;
-        border: 0;
-        font-size: 3rem;
-        background-color: transparent;
-        cursor: pointer;
-        align-self: self-start;
-    }
-
-    .open-menu {
-        color: var(--white);
-        display: flex;
-        align-self: self-start;
-        margin-right: 2rem;
-    }
-
-    .close-menu {
-        color: var(--white);
-        display: flex;
-        align-self: flex-end;
-    } */
 
     .hamburger{
         display: block;
