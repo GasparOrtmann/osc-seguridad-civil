@@ -118,7 +118,7 @@ h1,h2,h3,h4,p{
 }
 
 .navbar{
-    /* display: none; */
+    display: none;
 }
 .bar{
     display: block;
@@ -173,6 +173,7 @@ h1,h2,h3,h4,p{
     .hamburger{
         display: block;
         cursor: pointer;
+        margin-right: -45rem;
     }
     .hamburger.active .bar:nth-child(2){
         opacity: 0;
@@ -195,13 +196,15 @@ h1,h2,h3,h4,p{
         transition: 0.3s;
     }
     .navbar{
-        display: none;
+        display: inline;
+       
     }
     .nav-item{
         margin: 16px 0;
     }
     .nav-menu.active{
         left: 0;
+        background-color: var(--darkBlue);
     }
 }
 
