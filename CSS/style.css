@@ -198,7 +198,8 @@ h1,h2,h3,h4,p{
        max-width: 65rem;
     }
     .hamburger{
-        margin-right: -20rem;
+        margin: 0;
+        /* margin-right: -20rem; */
     }
 }
 
@@ -1097,8 +1098,9 @@ hr.solid {
 .faq__active.active .icon-tabler-square-rounded-minus{
     display: block;
 }
-
-
+.margin-left-faq{
+    margin-left: auto;
+}
 /* call us */
 .call-us{
     /* height: 240px; */
@@ -1301,6 +1303,17 @@ hr.solid {
         max-width: 70rem;
     }
 }
+@media (max-width: 600px) {
+    .contact-content{
+        max-width: 52rem;
+    }
+    .contact-text h3{
+        font-size: 16px;
+    }
+    .contact-text h2{
+        font-size: 24px;
+    }
+}
 
 /* footer */
 footer{
@@ -1387,6 +1400,20 @@ footer{
     }
     .footer-text a{
         font-size: 15px;
+    }
+}
+@media (max-width: 834px) {
+    .footer-content{
+        max-width: 52rem;
+    }
+    .footer-text{
+        display: inline;
+    }
+    .footer-secciones{
+        margin-top: 30px;
+    }
+    .footer-legales{
+        margin-top: 30px;
     }
 }
 
