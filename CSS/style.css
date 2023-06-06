@@ -199,8 +199,18 @@ h1,h2,h3,h4,p{
     }
     .hamburger{
         margin: 0;
-        /* margin-right: -20rem; */
     }
+}
+@media (min-width: 375px) {
+    .hamburger{
+        margin: 0;
+    }
+    /* .nav-bg{
+        width: 64%;
+    }
+    .nav-menu{
+        width: 64%;
+    } */
 }
 
 /* Hero */
@@ -209,7 +219,7 @@ h1,h2,h3,h4,p{
     background-image: url(../img/Guardia-de-Seguridad-OSC.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 1507px; */
+    height: 1400px;
     position: relative;
 }
 .hero:before {
@@ -291,16 +301,36 @@ h1,h2,h3,h4,p{
         width: 32%;
     }
 }
+@media (max-width: 375px) {
+    .first-section {
+        max-width: 35rem;
+        margin: 0 auto;
+      }
+      .first-section h2{
+        font-size: 24px;
+    }
+    .first-section p{
+        font-size: 18px;
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+    .botones__hero a{
+        width: 50%;
+    }
+    .hero:before {
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 40%, var(--darkGray) 90%), linear-gradient(to left, rgba(0,0,0,0) 0%, var(--darkGray) 110%);
+    }
+}
+
 /* Servicios */
 
-.servicios h2,h3{
+.servicios_titulos h2,h3{
     margin: 0;
 }
-.servicios h2{
+.servicios_titulos h2{
     font-size: 43px;
     margin-bottom: -5rem;
 }
-.servicios h3{
+.servicios_titulos h3{
     text-transform: uppercase;
     font-size: 18px;
     margin-bottom: .5rem;
@@ -442,8 +472,30 @@ h1,h2,h3,h4,p{
     .hero:before {
         background: linear-gradient(to bottom, rgba(0,0,0,0) 40%, var(--darkGray) 90%), linear-gradient(to left, rgba(0,0,0,0) 10%, var(--darkGray) 100%);
     }
-    .servicios h2{
+    .servicios_titulos h2{
         font-size: 34px;
+    }
+}
+@media (max-width: 375px) {
+    .contenido-hero{
+        max-width: 52rem;
+    }
+    .hero{
+        background-position-x: -580px;
+    }
+    .hero:before {
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 40%, var(--darkGray) 90%), linear-gradient(to left, rgba(0,0,0,0) 10%, var(--darkGray) 100%);
+    }
+    .servicios{
+        max-width: 35rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .servicios_titulos h2{
+        font-size: 24px;
+    }
+    .swiper-custom{
+        margin-top: 18%;
     }
 }
 
@@ -550,6 +602,14 @@ hr.solid {
         font-size: 45px;
     }
 }
+@media (max-width: 375px) {
+    .important-numbers{
+        max-width: 35rem;
+    }
+    .important-numbers h2{
+        font-size: 24px;
+    }
+}
 
 /* Clients */
 /* swiperCustom2 */
@@ -622,7 +682,7 @@ hr.solid {
     margin-top: auto;
 }
 .btns-slider-custom .swiper-button-prev{
-    margin-left: 152rem;
+    margin-left: 150rem;
 }
 
 .btns-slider-custom .swiper-button-next {
@@ -750,7 +810,7 @@ hr.solid {
         margin-left: 57rem;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
      .mySwiper2 .swiper-slide img {
         width: 600px;
         height: 300px;
@@ -768,6 +828,34 @@ hr.solid {
     .btns-slider-custom .swiper-button-prev{
         margin-left: 40rem;
     }
+}
+@media (max-width: 375px) {
+    .clients .swiper-content{
+        height: 900px;
+    }
+    .mySwiper2 .swiper-slide img {
+       width: 375px;
+       height: 300px;
+   }
+   .clients .swiper-text{
+       max-width: 35rem;
+   }
+   .clients .swiper-text-title{
+       margin-bottom: 2rem;
+       width: 35rem;
+   }
+   .clients .swiper-text-body{
+       width: 35rem;
+   }
+   .clients .swiper-text-body p{
+        font-size: 16px;
+    }
+    .btns-slider-custom .swiper-button-next {
+        margin-right: 2rem;
+    }
+   .btns-slider-custom .swiper-button-prev{
+       margin-left: 26rem;
+   }
 }
 
 /* about us */
@@ -833,6 +921,16 @@ hr.solid {
     gap: 5px;
     width: 200px;
     height: 42px;
+}
+.soluciones_title{
+    display: flex;
+    gap: .5rem;
+}
+.soluciones_check{
+    margin: auto 0;
+}
+.soluciones_text{
+    margin: auto 0;
 }
 
 @media (max-width: 1280px) {
@@ -911,6 +1009,27 @@ hr.solid {
     .about-content{
         max-width: 52rem;
     }
+}
+@media (max-width: 375px) {
+    .about-us{
+        height: 910px;
+    }
+    .about-content{
+        max-width: 35rem;
+    }
+    .about-text h3 {
+        font-size: 14px;
+        font-weight: 200;
+    }
+    .about-text h2 {
+        font-size: 24px;
+    }
+    .about-text p {
+    font-size: 16px;
+    }
+    .soluciones h4 {
+        font-size: 18px;
+      }
 }
 
 /* our clients */
@@ -995,6 +1114,27 @@ hr.solid {
     .our_clients__title{
         width: none;
         margin: 2rem auto;
+    }
+}
+@media (max-width: 375px) {
+    .our_clients__content{
+        max-width: 35rem;
+    }
+    .our_clients__title{
+        width: 350px;
+        height: 100px;
+    }
+    .our_clients__title h2{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .our_clients__title h3{
+        font-size: 14px;
+    }
+    .our_clients__logos{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(8,1fr);
+        height: 800px;
     }
 }
 
@@ -1101,6 +1241,15 @@ hr.solid {
 .margin-left-faq{
     margin-left: auto;
 }
+@media (max-width: 375px) {
+    .faq__content{
+        padding: 60px 20px;
+    }
+    .faq__titles h2 {
+        font-size: 28px;
+        line-height: 40px;
+      }
+}
 /* call us */
 .call-us{
     /* height: 240px; */
@@ -1177,6 +1326,17 @@ hr.solid {
     }
     .call-us-title a{
         margin-left: 0;
+    }
+}
+@media (max-width: 375px) {
+    .call-us-content{
+        max-width: 35rem;
+    }
+    .call-us-title p{
+        font-size: 16px;
+    }
+    .call-us-text{
+        width: auto;
     }
 }
 
@@ -1314,6 +1474,24 @@ hr.solid {
         font-size: 24px;
     }
 }
+@media (max-width: 375px) {
+    .contact-inputs{
+        display: inline;
+        height: auto;
+    }
+    .contact-input{
+        padding: 0;
+    }
+    .contact-content{
+        max-width: 35rem;
+    }
+    .contact-text{
+        width: auto;
+    }
+    .contact-text h2{
+        font-size: 24px;
+    }
+}
 
 /* footer */
 footer{
@@ -1414,6 +1592,15 @@ footer{
     }
     .footer-legales{
         margin-top: 30px;
+    }
+}
+@media (max-width: 375px) {
+    .footer-content{
+        max-width: 35rem;
+        padding: 60px 20px;
+    }
+    .footer-down p{
+        font-size: 14px;
     }
 }
 
