@@ -198,19 +198,18 @@ h1,h2,h3,h4,p{
        max-width: 65rem;
     }
     .hamburger{
-        margin: 0;
+        margin-right: 0;
+    }
+}
+@media (min-width: 428px) {
+    .hamburger{
+        margin-right: 60px;
     }
 }
 @media (min-width: 375px) {
     .hamburger{
-        margin: 0;
+        margin-right: 0;
     }
-    /* .nav-bg{
-        width: 64%;
-    }
-    .nav-menu{
-        width: 64%;
-    } */
 }
 
 /* Hero */
@@ -301,13 +300,13 @@ h1,h2,h3,h4,p{
         width: 32%;
     }
 }
-@media (max-width: 375px) {
+@media (max-width: 428px) {
     .first-section {
-        max-width: 35rem;
+        max-width: 40rem;
         margin: 0 auto;
       }
       .first-section h2{
-        font-size: 24px;
+        font-size: 30px;
     }
     .first-section p{
         font-size: 18px;
@@ -318,6 +317,14 @@ h1,h2,h3,h4,p{
     }
     .hero:before {
         background: linear-gradient(to bottom, rgba(0,0,0,0) 40%, var(--darkGray) 90%), linear-gradient(to left, rgba(0,0,0,0) 0%, var(--darkGray) 110%);
+    }
+}
+@media (max-width: 375px) {
+    .first-section {
+        max-width: 35rem;
+      }
+      .first-section h2{
+        font-size: 24px;
     }
 }
 
@@ -476,12 +483,12 @@ h1,h2,h3,h4,p{
         font-size: 34px;
     }
 }
-@media (max-width: 375px) {
+@media (max-width: 428px) {
     .contenido-hero{
-        max-width: 52rem;
+        max-width: 40rem;
     }
     .hero{
-        background-position-x: -580px;
+        background-position-x: -650px;
     }
     .hero:before {
         background: linear-gradient(to bottom, rgba(0,0,0,0) 40%, var(--darkGray) 90%), linear-gradient(to left, rgba(0,0,0,0) 10%, var(--darkGray) 100%);
@@ -492,10 +499,21 @@ h1,h2,h3,h4,p{
         margin-right: auto;
     }
     .servicios_titulos h2{
-        font-size: 24px;
+        font-size: 28px;
     }
     .swiper-custom{
         margin-top: 18%;
+    }
+}
+@media (max-width: 375px) {
+    .contenido-hero{
+        max-width: 52rem;
+    }
+    .hero{
+        background-position-x: -580px;
+    }
+    .servicios_titulos h2{
+        font-size: 24px;
     }
 }
 
@@ -600,6 +618,14 @@ hr.solid {
     }
     .important-numbers__2 h2{
         font-size: 45px;
+    }
+}
+@media (max-width: 428px) {
+    .important-numbers{
+        max-width: 40rem;
+    }
+    .important-numbers h2{
+        font-size: 28px;
     }
 }
 @media (max-width: 375px) {
@@ -829,6 +855,30 @@ hr.solid {
         margin-left: 40rem;
     }
 }
+@media (max-width: 428px) {
+    .clients .swiper-content{
+        height: 850px;
+    }
+    .mySwiper2 .swiper-slide img {
+       width: 428px;
+       height: 300px;
+   }
+   .clients .swiper-text{
+       max-width: 40rem;
+   }
+   .clients .swiper-text-body{
+       width: 40rem;
+   }
+   .clients .swiper-text-body p{
+        font-size: 16px;
+    }
+    .btns-slider-custom .swiper-button-next {
+        margin-right: 2rem;
+    }
+   .btns-slider-custom .swiper-button-prev{
+       margin-left: 31rem;
+   }
+}
 @media (max-width: 375px) {
     .clients .swiper-content{
         height: 900px;
@@ -847,12 +897,6 @@ hr.solid {
    .clients .swiper-text-body{
        width: 35rem;
    }
-   .clients .swiper-text-body p{
-        font-size: 16px;
-    }
-    .btns-slider-custom .swiper-button-next {
-        margin-right: 2rem;
-    }
    .btns-slider-custom .swiper-button-prev{
        margin-left: 26rem;
    }
@@ -1010,19 +1054,19 @@ hr.solid {
         max-width: 52rem;
     }
 }
-@media (max-width: 375px) {
+@media (max-width: 428px) {
     .about-us{
-        height: 910px;
+        height: 850px;
     }
     .about-content{
-        max-width: 35rem;
+        max-width: 40rem;
     }
     .about-text h3 {
         font-size: 14px;
         font-weight: 200;
     }
     .about-text h2 {
-        font-size: 24px;
+        font-size: 30px;
     }
     .about-text p {
     font-size: 16px;
@@ -1030,6 +1074,17 @@ hr.solid {
     .soluciones h4 {
         font-size: 18px;
       }
+}
+@media (max-width: 375px) {
+    .about-us{
+        height: 910px;
+    }
+    .about-content{
+        max-width: 35rem;
+    }
+    .about-text h2 {
+        font-size: 24px;
+    }
 }
 
 /* our clients */
@@ -1116,24 +1171,41 @@ hr.solid {
         margin: 2rem auto;
     }
 }
+@media (max-width: 428px) {
+    .our_clients__content{
+        max-width: 40rem;
+    }
+    .our_clients__title{
+        width: 400px;
+        height: 100px;
+    }
+    .our_clients__title h2{
+        font-size: 30px;
+        line-height: 32px;
+    }
+    .our_clients__title h3{
+        font-size: 16px;
+    }
+    .our_clients__logos{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(8,1fr);
+        height: 1000px;
+    }
+}
 @media (max-width: 375px) {
     .our_clients__content{
         max-width: 35rem;
     }
     .our_clients__title{
         width: 350px;
-        height: 100px;
     }
     .our_clients__title h2{
         font-size: 24px;
-        line-height: 32px;
     }
     .our_clients__title h3{
         font-size: 14px;
     }
     .our_clients__logos{
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(8,1fr);
         height: 800px;
     }
 }
@@ -1241,13 +1313,21 @@ hr.solid {
 .margin-left-faq{
     margin-left: auto;
 }
-@media (max-width: 375px) {
+@media (max-width: 428px) {
     .faq__content{
         padding: 60px 20px;
     }
     .faq__titles h2 {
-        font-size: 28px;
+        font-size: 30px;
         line-height: 40px;
+      }
+}
+@media (max-width: 375px) {
+    .faq__content{
+        padding: 40px 20px;
+    }
+    .faq__titles h2 {
+        font-size: 28px;
       }
 }
 /* call us */
@@ -1328,15 +1408,14 @@ hr.solid {
         margin-left: 0;
     }
 }
+@media (max-width: 428px) {
+    .call-us-content{
+        max-width: 40rem;
+    }
+}
 @media (max-width: 375px) {
     .call-us-content{
         max-width: 35rem;
-    }
-    .call-us-title p{
-        font-size: 16px;
-    }
-    .call-us-text{
-        width: auto;
     }
 }
 
@@ -1473,8 +1552,11 @@ hr.solid {
     .contact-text h2{
         font-size: 24px;
     }
+    .call-us-text {
+        width: auto;
+      }
 }
-@media (max-width: 375px) {
+@media (max-width: 428px) {
     .contact-inputs{
         display: inline;
         height: auto;
@@ -1483,13 +1565,19 @@ hr.solid {
         padding: 0;
     }
     .contact-content{
-        max-width: 35rem;
+        max-width: 40rem;
     }
     .contact-text{
         width: auto;
     }
     .contact-text h2{
         font-size: 24px;
+    }
+    
+}
+@media (max-width: 375px) {
+    .contact-content{
+        max-width: 35rem;
     }
 }
 
