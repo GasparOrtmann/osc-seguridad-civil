@@ -375,22 +375,6 @@ h1,h2,h3,h4,p{
     z-index: 1;
 }
 
-/* .swiper-slide:nth-child(1){
-    background-image: url(../img/servicios-seguridadfisica.webp);
-}
-.swiper-img-2{
-    background-image: url(../img/servicios-seguridadelectronica.webp);
-}
-.swiper-img-3{
-    background-image: url(../img/servicios-capacitacioneswebp.webp);
-}
-.swiper-img-4{
-    background-image: url(../img/servicios-altaseguridad.webp);
-}
-.swiper-img-5{
-    background-image: url(../img/servicios-investigaciones.webp);
-} */
-
 .swiper-slide p {
     color: var(--white);
     position: absolute;
@@ -448,16 +432,16 @@ h1,h2,h3,h4,p{
 }
 @media (max-width: 1280px) {
     .contenido-hero{
-        max-width: 108rem;
+        padding: 0 60px;
     }
     /* .swiper-slide img {
         width: 350px;
     } */
 }
 @media (max-width: 834px) {
-    .contenido-hero{
+    /* .contenido-hero{
         max-width: 75rem;
-    }
+    } */
     .hero{
         background-size: auto;
         background-position-x: -350px;
@@ -468,17 +452,17 @@ h1,h2,h3,h4,p{
     }
 }
 @media (max-width: 768px) {
-    .contenido-hero{
+    /* .contenido-hero{
         max-width: 70rem;
-    }
+    } */
     .hero{
         background-position-x: -415px;
     }
 }
 @media (max-width: 600px) {
-    .contenido-hero{
+    /* .contenido-hero{
         max-width: 52rem;
-    }
+    } */
     .hero{
         background-position-x: -580px;
     }
@@ -490,9 +474,9 @@ h1,h2,h3,h4,p{
     }
 }
 @media (max-width: 428px) {
-    .contenido-hero{
+    /* .contenido-hero{
         max-width: 40rem;
-    }
+    } */
     .hero{
         background-position-x: -650px;
     }
@@ -500,9 +484,9 @@ h1,h2,h3,h4,p{
         background: linear-gradient(to bottom, rgba(0,0,0,0) 40%, var(--darkGray) 90%), linear-gradient(to left, rgba(0,0,0,0) 10%, var(--darkGray) 100%);
     }
     .servicios{
-        max-width: 35rem;
+        /* max-width: 35rem;
         margin-left: auto;
-        margin-right: auto;
+        margin-right: auto; */
     }
     .servicios_titulos h2{
         font-size: 28px;
@@ -512,9 +496,9 @@ h1,h2,h3,h4,p{
     }
 }
 @media (max-width: 375px) {
-    .contenido-hero{
+    /* .contenido-hero{
         max-width: 52rem;
-    }
+    } */
     .hero{
         background-position-x: -580px;
     }
@@ -573,7 +557,8 @@ hr.solid {
 
 @media (max-width: 1280px) {
     .important-numbers{
-        max-width: 108rem;
+        padding-right: 60px;
+        padding-left: 60px;
     }
     /* .important-numbers__1{
         grid-template-columns: 480px 550px;
@@ -587,9 +572,9 @@ hr.solid {
     }
 }
 @media (max-width: 834px) {
-    .important-numbers{
+    /* .important-numbers{
         max-width: 75rem;
-    }
+    } */
     .important-numbers__1{
         display: inline;
     }
@@ -610,17 +595,17 @@ hr.solid {
     }
 }
 @media (max-width: 768px) {
-    .important-numbers{
+    /* .important-numbers{
         max-width: 70rem;
-    }
+    } */
     .important-numbers__2 h2{
         font-size: 45px;
     }
 }
 @media (max-width: 600px) {
-    .important-numbers{
+    /* .important-numbers{
         max-width: 52rem;
-    }
+    } */
     .important-numbers h2{
         font-size: 23px;
     }
@@ -632,17 +617,17 @@ hr.solid {
     }
 }
 @media (max-width: 428px) {
-    .important-numbers{
+    /* .important-numbers{
         max-width: 40rem;
-    }
+    } */
     .important-numbers h2{
         font-size: 28px;
     }
 }
 @media (max-width: 375px) {
-    .important-numbers{
+    /* .important-numbers{
         max-width: 35rem;
-    }
+    } */
     .important-numbers h2{
         font-size: 24px;
     }
@@ -903,16 +888,10 @@ hr.solid {
 }
 
 @media (max-width: 1280px) {
-    /* .about-us{
-        height: 920px;
-    }
     .about-content{
-        max-width: 108rem;
+        padding-right: 60px;
+        padding-left: 60px;
     }
-    .about-text{
-        width: 560px;
-        height: 630px;
-    } */
     .logo-png{
         width: 143.85px;
         height: 140px;
@@ -938,13 +917,13 @@ hr.solid {
     }
 }
 @media (max-width: 834px) {
-    .about-us{
+    /* .about-us{
         height: 800px;
     }
     .about-content{
         max-width: 75rem;
         padding: 60px 0;
-    }
+    } */
     .logo-png{
         display: none;
     }
@@ -957,25 +936,25 @@ hr.solid {
     } */
 }
 @media (max-width: 768px) {
-    .about-content{
+    /* .about-content{
         max-width: 70rem;
-    }
+    } */
 }
 @media (max-width: 600px) {
-    .about-us{
+    /* .about-us{
         height: 850px;
     }
     .about-content{
         max-width: 52rem;
-    }
+    } */
 }
 @media (max-width: 428px) {
-    .about-us{
+    /* .about-us{
         height: 850px;
     }
     .about-content{
         max-width: 40rem;
-    }
+    } */
     .about-text h3 {
         font-size: 14px;
         font-weight: 200;
