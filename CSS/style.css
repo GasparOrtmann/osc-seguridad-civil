@@ -12,23 +12,23 @@
 /* Fonts */
 @font-face {
     font-family: acuminPro;
-    src: url(/fonts/AcuminPro.otf);
+    src: url(../fonts/AcuminPro.otf);
 }
 @font-face {
     font-family: acuminProBold;
-    src: url(/fonts/AcuminPro-Bold.otf);
+    src: url(../fonts/AcuminPro-Bold.otf);
 }
 @font-face {
     font-family: acuminProSemiBold;
-    src: url(/fonts/AcuminPro-Semibold.otf);
+    src: url(../fonts/AcuminPro-Semibold.otf);
 }
 @font-face {
     font-family: acuminProLight;
-    src: url(/fonts/AcuminPro-Light.otf);
+    src: url(../fonts/AcuminPro-Light.otf);
 }
 @font-face {
     font-family: acuminProMedium;
-    src: url(/fonts/AcuminPro-Medium.otf);
+    src: url(../fonts/AcuminPro-Medium.otf);
 }
 
 /* Globales */
@@ -137,7 +137,7 @@ h1,h2,h3,h4,p{
         max-width: 108rem;
      }
 }
-@media (max-width: 834px) {
+@media (max-width: 1000px) {
     .nav-bg{
         background-color: var(--darkBlue);
     }
@@ -432,7 +432,7 @@ h1,h2,h3,h4,p{
 }
 @media (max-width: 1280px) {
     .contenido-hero{
-        padding: 0 60px;
+        padding: 0 5%;
     }
     /* .swiper-slide img {
         width: 350px;
@@ -494,6 +494,9 @@ h1,h2,h3,h4,p{
     .swiper-custom{
         margin-top: 18%;
     }
+    .servicios_titulos{
+        margin-bottom: 15%;
+    }
 }
 @media (max-width: 375px) {
     /* .contenido-hero{
@@ -501,6 +504,9 @@ h1,h2,h3,h4,p{
     } */
     .hero{
         background-position-x: -580px;
+    }
+    .servicios{
+        padding: 25% 0 20% 0;
     }
     .servicios_titulos h2{
         font-size: 24px;
@@ -898,7 +904,7 @@ hr.solid {
         margin-left: -74px;
     }
 }
-@media (max-width: 834px) {
+@media (max-width: 1100px) { /* 834 px en realidad */
     /* .about-us{
         height: 800px;
     }
@@ -986,7 +992,7 @@ hr.solid {
     background-color: var(--blue);
 }
 .our_clients__content{
-    max-width: 128rem;
+    max-width: 120rem;
     margin: 0 auto;
     display: flex;
     padding: 4rem 0;
@@ -1029,7 +1035,8 @@ hr.solid {
 
 @media (max-width: 1280px) {
     .our_clients__content{
-        max-width: 108rem;
+        padding: 60px;
+        display: block;
     }
     .our_clients__title h2{
         font-size: 35px;
@@ -1138,6 +1145,7 @@ hr.solid {
     margin: 15px 0;
     align-items: center;
     cursor: pointer;
+    gap: 1%;
 }
 .faq__box h4{
     font-family: acuminPro;
@@ -1221,7 +1229,7 @@ hr.solid {
 .call-us-content{
     max-width: 128rem;
     margin: 0 auto;
-    padding: 60px 60px;
+    padding: 60px;
 }
 .call-us-title{
     display: flex;
@@ -1265,21 +1273,13 @@ hr.solid {
 }
 @media (max-width: 834px) {
     .call-us-content{
-        max-width: 75rem;
+        padding: 60px 5%;
     }
     .call-us-title h3{
         font-size: 31px;
     }
 }
-@media (max-width: 768px) {
-    .call-us-content{
-        max-width: 70rem;
-    }
-}
 @media (max-width: 600px) {
-    .call-us-content{
-        max-width: 52rem;
-    }
     .call-us-title{
         display: inline;
         text-align: left;
@@ -1289,16 +1289,6 @@ hr.solid {
     }
     .call-us-title a{
         margin-left: 0;
-    }
-}
-@media (max-width: 428px) {
-    .call-us-content{
-        max-width: 40rem;
-    }
-}
-@media (max-width: 375px) {
-    .call-us-content{
-        max-width: 35rem;
     }
 }
 
@@ -1348,12 +1338,17 @@ hr.solid {
 .contact-inputs{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    /* grid-template-rows: repeat(4,1fr); */
+    grid-template-rows: 1fr 1fr 1fr .5fr;
     width: 50%;
+    column-gap: 3%;
+    align-items: center;
 }
 .contact-input{
     display: grid;
-    padding-right: 30px;
+    /* padding-right: 30px; */
+}
+.contact-input:nth-child(1){
+    /* padding-right: 30px; */
 }
 .contact-input input{
     margin-top: 1.5rem;
@@ -1387,28 +1382,27 @@ hr.solid {
 }
 .input-btn{
     grid-row: 4/5;
-    margin-top: 1rem;
 }
 
 @media (max-width: 1280px) {
     .contact-content{
-        max-width: 108rem;
+        padding: 60px 5%;
     }
-    .contact-inputs{
+    /* .contact-inputs{
         width: 600px;
-    }
+    } */
 }
 @media (max-width: 834px) {
     .contact-content{
         max-width: 75rem;
-        display: grid;
+        display: block;
     }
     .contact-text{
         height: auto;
     }
     .contact-inputs{
         width: auto;
-        margin-top: 2rem;
+        /* margin-top: 2rem; */
     }
     .contact-input:nth-child(2){
         padding-right: 0px;
@@ -1427,7 +1421,7 @@ hr.solid {
 }
 @media (max-width: 600px) {
     .contact-content{
-        max-width: 52rem;
+        /* max-width: 52rem; */
     }
     .contact-text h3{
         font-size: 16px;
