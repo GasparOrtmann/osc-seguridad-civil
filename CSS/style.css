@@ -707,6 +707,7 @@ hr.solid {
     background-color: var(--blue);
     height: 6rem;
     padding: 1.5rem;
+    /* margin-top: -4%; */
 }
 .btns-slider-custom-content{
     max-width: 128rem;
