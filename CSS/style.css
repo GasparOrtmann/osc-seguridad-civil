@@ -363,13 +363,31 @@ h1,h2,h3,h4,p{
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, #2A334E 80%);
     z-index: 1;
 }
-
-.swiper-slide p {
+.swiper-slide:hover:before{
+    background: #2A334E;
+    opacity: 95%;
+    transition: 1s;
+}
+.servicios-swiper-text{
     color: var(--white);
     position: absolute;
     bottom: 0;
     margin-left: 2rem;
     z-index: 1;
+}
+.servicios-swiper-text ul{
+    display: none;
+    font-size: 14px;
+}
+.swiper-slide:hover .servicios-swiper-text ul{
+    display: block;
+}
+.swiper-slide p {
+    /* color: var(--white);
+    position: absolute;
+    bottom: 0;
+    margin-left: 2rem;
+    z-index: 1; */
 }
 
 .swiper-slide img {
@@ -625,10 +643,10 @@ hr.solid {
     margin-left: 0;
 }
 .mySwiper2 .swiper-slide img {
-    display: block;
+    /* display: block;
     width: 100%;
     height: 70%;
-    object-fit: cover;
+    object-fit: cover; */
 }
 
 .btns-slider-custom .swiper-button-prev, .swiper-button-next {

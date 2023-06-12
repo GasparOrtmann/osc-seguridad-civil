@@ -31,7 +31,9 @@ var swiper = new Swiper(".mySwiper1", {
     },
 
     autoplay: {
+        disableOnInteraction: false,
         delay: 3000,
+        pauseOnMouseEnter: true,
       },
 
 });
