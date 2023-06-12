@@ -382,13 +382,6 @@ h1,h2,h3,h4,p{
 .swiper-slide:hover .servicios-swiper-text ul{
     display: block;
 }
-.swiper-slide p {
-    /* color: var(--white);
-    position: absolute;
-    bottom: 0;
-    margin-left: 2rem;
-    z-index: 1; */
-}
 
 .swiper-slide img {
     display: block;
@@ -767,7 +760,10 @@ hr.solid {
     }
    .btns-slider-custom .swiper-button-prev{
     margin-left: 75%;
-}
+    }
+    .clients .swiper-text-title{
+        min-width: auto;
+    }
 }
 @media (max-width: 375px) {
     
@@ -1335,7 +1331,9 @@ hr.solid {
     .contact-text h2{
         font-size: 24px;
     }
-    
+    .input-btn{
+        margin-top: 5%;
+    }
 }
 @media (max-width: 375px) {
     .contact-content{
