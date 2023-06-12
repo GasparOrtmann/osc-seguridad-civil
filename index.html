@@ -582,37 +582,38 @@
                 </div>
                 
             </div>
-
+            <form method="post" action="sendEmail.php">
             <div class="contact-inputs">
                 <div class="contact-input">
-                    <label>Nombre (requerido)</label>
-                    <input class="input-text" type="text" placeholder="Escribe tu nombre" required>
+                    <label for="name">Nombre (requerido)</label>
+                    <input class="input-text" type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
                 </div>
 
                 <div class="contact-input">
-                    <label>Empresa (opcional)</label>
-                    <input class="input-text" type="text" placeholder="Escribe el nombre de tu empresa">
+                    <label for="empresa">Empresa (opcional)</label>
+                    <input class="input-text" type="text" id="empresa" name="empresa" placeholder="Escribe el nombre de tu empresa">
                 </div>
 
                 <div class="contact-input">
-                    <label>Email (requerido)</label>
-                    <input class="input-text" type="email" placeholder="Escribe tu correo electrónico" required>
+                    <label for="email">Email (requerido)</label>
+                    <input class="input-text" type="email" id="email" name="email" placeholder="Escribe tu correo electrónico" required>
                 </div>
 
                 <div class="contact-input">
-                    <label>Teléfono (opcional)</label>
-                    <input class="input-text" type="tel" placeholder="Escribe tu teléfono">
+                    <label for="telefono">Teléfono (opcional)</label>
+                    <input class="input-text" type="tel" id="telefono" name="telefono" placeholder="Escribe tu teléfono">
                 </div>
 
                 <div class="contact-input">
-                    <label>Mensaje (requerido)</label>
-                    <textarea class="input-text" type="text" placeholder="Escribe tu mensaje" required></textarea>
+                    <label for="mensaje">Mensaje (requerido)</label>
+                    <textarea class="input-text" type="text" id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
                 </div>
 
                 <div class="input-btn">
                     <a class="boton" href="#">Enviar</a>
                 </div>
             </div>
+        </form>
         </div>
     </div>
 
