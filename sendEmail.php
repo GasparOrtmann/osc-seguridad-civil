@@ -24,11 +24,11 @@ if (isset($_POST["sendEmailBtn"])){
 			<span class="preheader" style="color: transparent; display: none; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0;">'.$message.'</span>
 				<div class="container">
                  '.$message.'<br/>
-                    Regards<br/>
-                  '.$fromEmail.'<br/>
-                  '.$name.'<br/>
-                  '.$empresa.'<br/>
-                  '.$telephone.'
+                    <br/>
+                  Email: '.$fromEmail.'<br/>
+                  Nombre: '.$name.'<br/>
+                  Empresa: '.$empresa.'<br/>
+                  Teléfono: '.$telephone.'
 				</div>
 			</body>
 			</html>';
@@ -37,3 +37,4 @@ if (isset($_POST["sendEmailBtn"])){
     echo '<script>alert("Email sent successfully !")</script>';
     echo '<script>window.location.href="index.php";</script>';
 }
+?>
