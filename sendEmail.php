@@ -7,7 +7,7 @@ if (isset($_POST["sendEmailBtn"])){
     $message = $_POST["message"];
 
     $from = $name;
-    $to = "info@fabileone.com";
+    $to = "gasparortmann@gmail.com";
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
     $headers .= 'From: '.$email.'<'.$email.'>' . "\r\n".'Reply-To: '.$email."\r\n" . 'X-Mailer: PHP/' . phpversion();
