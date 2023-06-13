@@ -1240,6 +1240,9 @@ hr.solid {
 .input-btn{
     grid-row: 4/5;
 }
+.input-btn button{
+    border: transparent;
+}
 
 @media (max-width: 1280px) {
     .contact-content{

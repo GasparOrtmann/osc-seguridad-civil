@@ -582,8 +582,8 @@
                 </div>
                 
             </div>
-            <form method="post" action="sendEmail.php">
-            <div class="contact-inputs">
+            
+            <form method="post" action="sendEmail.php" class="contact-inputs">
                 <div class="contact-input">
                     <label for="name">Nombre (requerido)</label>
                     <input class="input-text" type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
@@ -600,20 +600,19 @@
                 </div>
 
                 <div class="contact-input">
-                    <label for="telefono">Teléfono (opcional)</label>
-                    <input class="input-text" type="tel" id="telefono" name="telefono" placeholder="Escribe tu teléfono">
+                    <label for="telephone">Teléfono (opcional)</label>
+                    <input class="input-text" type="tel" id="telephone" name="telephone placeholder="Escribe tu teléfono">
                 </div>
 
                 <div class="contact-input">
-                    <label for="mensaje">Mensaje (requerido)</label>
-                    <textarea class="input-text" type="text" id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+                    <label for="message">Mensaje (requerido)</label>
+                    <textarea class="input-text" type="text" id="message" name="message" placeholder="Escribe tu mensaje" required></textarea>
                 </div>
 
                 <div class="input-btn">
-                    <a class="boton" href="#">Enviar</a>
+                    <button class="boton" name="sendEmailBtn">Enviar</button>
                 </div>
-            </div>
-        </form>
+            </form>
         </div>
     </div>
 
