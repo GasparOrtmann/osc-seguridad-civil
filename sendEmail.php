@@ -26,9 +26,14 @@ if (isset($_POST["sendEmailBtn"])){
                  '.$message.'<br/>
                     <br/>
                   Email: '.$fromEmail.'<br/>
-                  Nombre: '.$name.'<br/>
-                  Empresa: '.$empresa.'<br/>
-                  Teléfono: '.$telephone.'
+                  Nombre: '.$name.'<br/>';
+                  if (strlen($_POST["empresa"]) > 0) { 
+                    'Empresa: '.$empresa.'<br/>';
+                  }
+                  if (strlen($_POST["telephone"]) > 0) { 
+                    'Teléfono: '.$telephone.'';
+                  }  
+                  '
 				</div>
 			</body>
 			</html>';
