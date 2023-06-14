@@ -1,13 +1,21 @@
 <?php
 if (isset($_POST["sendEmailBtn"])){
     $name = $_POST["name"];
-    $empresa = $_POST["empresa"];
+    if(empty($_POST["empresa"])){
+      $empresa = "";
+    }else{
+      $empresa = "Empresa" + $_POST["empresa"];
+    }
     $email = $_POST["email"];
-    $telephone = $_POST["telephone"];
+    if(empty($_POST["telephone"])){
+      $telephone = "";
+    }else{
+      $telephone = "Teléfono" + $_POST["telephone"];
+    }
     $message = $_POST["message"];
 
-    $from = $name;
     $to = "gasparortmann@gmail.com";
+    $from = $name;
     $headers = "MIME-Version: 1.0" . "\r\n";
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
     $headers .= 'From: '.$email.'<'.$email.'>' . "\r\n".'Reply-To: '.$email."\r\n" . 'X-Mailer: PHP/' . phpversion();
@@ -24,22 +32,16 @@ if (isset($_POST["sendEmailBtn"])){
 			<span class="preheader" style="color: transparent; display: none; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0;">'.$message.'</span>
 				<div class="container">
                  '.$message.'<br/>
-                    <br/>
-                  Email: '.$fromEmail.'<br/>
-                  Nombre: '.$name.'<br/>';
-                  if (strlen($_POST["empresa"]) > 0) { 
-                    'Empresa: '.$empresa.'<br/>';
-                  }
-                  if (strlen($_POST["telephone"]) > 0) { 
-                    'Teléfono: '.$telephone.'';
-                  }  
-                  '
-				</div>
+                      <br/>
+                  Email: '.$email.'<br/>
+                  Nombre: '.$name.'<br/>'
+                  .$empresa.'<br/>'
+                 .$telephone.'
+        </div>
 			</body>
 			</html>';
     $result = @mail($to, $from, $message, $headers);
 
-    echo '<script>alert("Email sent successfully !")</script>';
-    echo '<script>window.location.href="index.php";</script>';
+    echo '<script>alert("Mensaje enviado correctamente")</script>';
+    echo '<script>window.location.href="index.html";</script>';
 }
-?>
