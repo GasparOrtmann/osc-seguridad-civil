@@ -830,6 +830,12 @@ hr.solid {
     .about-text{
         margin-left: 0;
     }
+    .about-text br{
+        display: none;
+    }
+    .about-text h2{
+        font-size: 31px;
+    }
 }
 @media (max-width: 428px) {
     .about-text h3 {
