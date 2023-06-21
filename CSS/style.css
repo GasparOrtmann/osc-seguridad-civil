@@ -48,6 +48,10 @@ body{
 h1,h2,h3,h4,p{
     color: var(--white);
 }
+.contenedor {
+    width: min(90%, 128rem);
+    margin: 0 auto;
+}
 .nav-container{
     max-width: 128rem;
     margin: 0 auto ;
@@ -132,27 +136,14 @@ h1,h2,h3,h4,p{
     transition: all 0.3s ease-in-out;
     background-color: var(--white);
 }
-@media (min-width: 1280px) {
-     .nav-container{
-        max-width: 120rem;
-     }
-}
 /* Botones menu mobile */
 
-@media (max-width: 1280px) {
-     .nav-container{
-        padding: 15px 60px;
-     }
-}
 @media (max-width: 1000px) {
     .nav-bg{
         background-color: var(--darkBlue);
     }
     .nav-list{
         display: none;
-    }
-    .nav-container{
-       max-width: 75rem;
     }
 
     .hamburger{
@@ -191,16 +182,6 @@ h1,h2,h3,h4,p{
         background-color: var(--darkBlue);
     }
 }
-@media (max-width: 768px) {
-    .nav-container{
-       max-width: 70rem;
-    }
-}
-@media (max-width: 600px) {
-    .nav-container{
-       max-width: 65rem;
-    }
-}
 
 /* Hero */
 
@@ -228,7 +209,6 @@ h1,h2,h3,h4,p{
     grid-template-columns: repeat(2,1fr);
     max-width: 128rem;
     margin: 0 auto ;
-    /* height: 1507px; */
     z-index: 1;
 }
 
@@ -337,7 +317,11 @@ h1,h2,h3,h4,p{
     padding: 25% 0 10% 0;
     z-index: 1;
 }
-
+@media (max-width: 500px) {
+    .servicios_titulos h2{
+        margin-bottom: -3rem;
+    }
+}
 /* Swiper custom */
 .swiper-custom {
     position: relative;
@@ -507,8 +491,6 @@ h1,h2,h3,h4,p{
 
 /* Important numbers */
 .important-numbers{
-    max-width: 128rem;
-    margin: 0 auto;
     padding: 60px 0;
 }
 .important-numbers__1{
@@ -554,10 +536,6 @@ hr.solid {
 }
 
 @media (max-width: 1280px) {
-    .important-numbers{
-        padding-right: 60px;
-        padding-left: 60px;
-    }
     .important-numbers h2{
         font-size: 33px;
     }
@@ -622,7 +600,7 @@ hr.solid {
 }
 .clients .swiper-text{
     display: flex;
-    padding: 60px;
+    padding: 60px 0;
     max-width: 128rem;
     margin: 0 auto;
     gap: 3%;
@@ -749,24 +727,13 @@ hr.solid {
     }
     
 }
-@media (max-width: 768px) {
-    .clients .swiper-text{
-        max-width: 70rem;
-    }
-}
+
 @media (max-width: 600px) {
-    .clients .swiper-text{
-        max-width: 52rem;
-    }
     .btns-slider-custom .swiper-button-prev{
         margin-left: 78%;
     }
 }
 @media (max-width: 428px) {
-
-   .clients .swiper-text{
-       max-width: 40rem;
-   }
 
    .clients .swiper-text-body p{
         font-size: 16px;
@@ -778,18 +745,9 @@ hr.solid {
         min-width: auto;
     }
 }
-@media (max-width: 375px) {
-    
-   .clients .swiper-text{
-       max-width: 35rem;
-   }
-   
-}
 
 /* about us */
 .about-content{
-    max-width: 128rem;
-    margin: 0 auto;
     display: flex;
     padding: 80px 0;
     justify-content: center;
@@ -857,10 +815,6 @@ hr.solid {
 }
 
 @media (max-width: 1280px) {
-    .about-content{
-        padding-right: 60px;
-        padding-left: 60px;
-    }
     .logo-png{
         width: 143.85px;
         height: 140px;
@@ -904,10 +858,8 @@ hr.solid {
     background-color: var(--blue);
 }
 .our_clients__content{
-    max-width: 128rem;
-    margin: 0 auto;
     display: flex;
-    padding: 4rem 0;
+    padding: 60px 0;
     justify-content: center;
     align-items: center;
     gap: 5%;
@@ -947,7 +899,6 @@ hr.solid {
 
 @media (max-width: 1280px) {
     .our_clients__content{
-        padding: 60px;
         display: block;
     }
     .our_clients__title h2{
@@ -997,15 +948,12 @@ hr.solid {
 
 /* faq */
 .faq__content{
-    max-width: 128rem;
-    margin: 0 auto;
-    padding: 60px 1%;
+    padding: 60px 0;
 }
 .faq__titles{
     display: grid;
     text-align: center;
     align-items: center;
-    margin-bottom: 3rem;
 }
 .faq__titles h2{
     font-family: acuminProBold;
@@ -1088,18 +1036,12 @@ hr.solid {
     margin-left: auto;
 }
 @media (max-width: 428px) {
-    .faq__content{
-        padding: 60px 20px;
-    }
     .faq__titles h2 {
         font-size: 30px;
         line-height: 40px;
       }
 }
 @media (max-width: 375px) {
-    .faq__content{
-        padding: 40px 20px;
-    }
     .faq__titles h2 {
         font-size: 28px;
       }
@@ -1109,8 +1051,6 @@ hr.solid {
     background-color: var(--blue);
 }
 .call-us-content{
-    max-width: 128rem;
-    margin: 0 auto;
     padding: 60px 0;
 }
 .call-us-title{
@@ -1148,9 +1088,6 @@ hr.solid {
     font-family: acuminProLight;
 }
 @media (max-width: 834px) {
-    .call-us-content{
-        padding: 60px 5%;
-    }
     .call-us-title h3{
         font-size: 31px;
     }
@@ -1173,8 +1110,6 @@ hr.solid {
     background-color: var(--darkGray);
 }
 .contact-content{
-    max-width: 128rem;
-    margin: 0 auto;
     display: flex;
     padding: 60px 0;
     gap: 10%;
@@ -1259,11 +1194,6 @@ hr.solid {
     border: transparent;
 }
 
-@media (max-width: 1280px) {
-    .contact-content{
-        padding: 60px 5%;
-    }
-}
 @media (max-width: 834px) {
     .contact-content{
         max-width: 75rem;
@@ -1333,9 +1263,7 @@ footer{
     background-color: var(--blue);
 }
 .footer-content{
-    max-width: 128rem;
-    margin: 0 auto;
-    padding: 60px;
+    padding: 60px 0;
 }
 .footer-text{
     display: flex;
@@ -1401,23 +1329,12 @@ footer{
     line-height: 19px;
 }
 
-@media (max-width: 1280px) {
-    .footer-content{
-        max-width: 108rem;
-    }
-}
 @media (max-width: 834px) {
-    .footer-content{
-        max-width: 75rem;
-    }
     .footer-text a{
         font-size: 15px;
     }
 }
 @media (max-width: 834px) {
-    .footer-content{
-        max-width: 52rem;
-    }
     .footer-text{
         display: inline;
     }
@@ -1429,10 +1346,6 @@ footer{
     }
 }
 @media (max-width: 375px) {
-    .footer-content{
-        max-width: 35rem;
-        padding: 60px 20px;
-    }
     .footer-down p{
         font-size: 14px;
     }
