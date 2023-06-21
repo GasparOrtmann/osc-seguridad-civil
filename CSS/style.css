@@ -101,7 +101,6 @@ h1,h2,h3,h4,p{
     margin: 0 1.5rem;
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.6);
 }
-
 .nav-container li{
     list-style: none;
 }
@@ -114,6 +113,7 @@ h1,h2,h3,h4,p{
     margin: 0 1.5rem;
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.6);
 }
+
 
 .open-menu {
     display: none;
@@ -162,24 +162,29 @@ h1,h2,h3,h4,p{
 
     .nav-menu{
         position: fixed;
-        left: -100%;
-        top: 70px;
+        top: -100%;
+        left: 0;
         gap: 0;
         flex-direction: column;
         width: 100%;
-        text-align: center;
+        height: 100%;
+        text-align: left;
         transition: 0.3s;
+        padding: 60px 25px;
     }
     .navbar{
         display: inline;
        
     }
     .nav-item{
-        margin: 16px 0;
+        padding: 30px 0;
     }
     .nav-menu.active{
-        left: 0;
+        top: 10%;
         background-color: var(--darkBlue);
+    }
+    ul{
+        padding-left: revert;
     }
 }
 
