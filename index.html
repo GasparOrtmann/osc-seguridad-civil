@@ -549,10 +549,15 @@
 
     <div class="call-us">
         <div class="call-us-content contenedor">
-            <div class="call-us-title botones__call-us">
-                <h3>Asegure su tranquilidad hoy</h3>
-                <a class="boton" href="tel: +54 9 3415 72-0717"><i class="fa-solid fa-phone" style="color: #ffffff;"></i>Llámanos ahora</a>
+            <div class="call-us-first-section">
+                <div class="call-us-title">
+                    <h3>Asegure su tranquilidad hoy</h3>
+                </div>
+                <div class="contact-boton botones__call-us">
+                    <a class="boton" href="tel: +54 9 3415 72-0717"><i class="fa-solid fa-phone" style="color: #ffffff;"></i>Llámanos ahora</a>
+                </div>
             </div>
+           
             <hr class="solid">
             <div class="call-us-text">
                 <p>Llame ahora para hablar con uno de nuestros expertos en seguridad y descubra cómo OSC puede protegerlo a usted y a sus activos.</p>
@@ -584,36 +589,9 @@
                 
             </div>
             
-            <form method="post" action="sendEmail.php" class="contact-inputs">
-                <div class="contact-input">
-                    <label for="name">Nombre (requerido)</label>
-                    <input class="input-text" type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
-                </div>
-
-                <div class="contact-input">
-                    <label for="empresa">Empresa (opcional)</label>
-                    <input class="input-text" type="text" id="empresa" name="empresa" placeholder="Escribe el nombre de tu empresa">
-                </div>
-
-                <div class="contact-input">
-                    <label for="email">Email (requerido)</label>
-                    <input class="input-text" type="email" id="email" name="email" placeholder="Escribe tu correo electrónico" required>
-                </div>
-
-                <div class="contact-input">
-                    <label for="telephone">Teléfono (opcional)</label>
-                    <input class="input-text" type="tel" id="telephone" name="telephone" placeholder="Escribe tu teléfono">
-                </div>
-
-                <div class="contact-input">
-                    <label for="message">Mensaje (requerido)</label>
-                    <textarea class="input-text" type="text" id="message" name="message" placeholder="Escribe tu mensaje" required></textarea>
-                </div>
-
-                <div class="input-btn">
-                    <button class="boton" name="sendEmailBtn">Enviar</button>
-                </div>
-            </form>
+            <div class="contact-boton botones__call-us">
+                    <a class="boton" href="mailto: info@seguridadcivil.com.ar"><i class="fa-solid fa-phone" style="color: #ffffff;"></i>Enviar consulta</a>
+            </div>
         </div>
     </div>
 
