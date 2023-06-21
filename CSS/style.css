@@ -170,7 +170,12 @@ h1,h2,h3,h4,p{
         height: 100%;
         text-align: left;
         transition: 0.3s;
-        padding: 60px 25px;
+        padding: 60px 45px;
+    }
+    @media (max-width: 834px) {
+         .nav-menu{
+            padding: 60px 25px;
+         }
     }
     .navbar{
         display: inline;
