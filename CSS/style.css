@@ -246,11 +246,18 @@ h1,h2,h3,h4,p{
 }
 .boton:hover{
     cursor: pointer;
-    color: var(--white)
+    color: var(--white);
+    background-color: #0b40a9;
+    transform: scale(1.05);
+    transition: 0.5s all;
 }
 .boton__secundario:hover{
     cursor: pointer;
-    color: var(--white)
+    color: var(--white);
+    background-color: var(--white);
+    color: black;
+    transform: scale(1.05);
+    transition: 0.5s all;
 }
 .botones_swiper1{
     margin-top: -2rem;
