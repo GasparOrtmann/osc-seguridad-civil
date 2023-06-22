@@ -560,7 +560,7 @@ hr.solid {
 
 @media (max-width: 1280px) {
     .important-numbers h2{
-        font-size: 33px;
+        font-size: 31px;
     }
     .important-numbers p{
         font-size: 17px;
@@ -885,12 +885,10 @@ hr.solid {
 }
 .our_clients__title h2{
     font-family: acuminProBold;
-    grid-row: 2 / 3;
-    grid-column: 1 / 3;
-    line-height: 35px;
+    line-height: 45px;
+    font-size: 43px;
 }
 .our_clients__title h3{
-    grid-column: 1 / 3;
     font-size: 18px;
     margin-top: auto;
 }
@@ -978,7 +976,8 @@ hr.solid {
 }
 .faq__titles h2{
     font-family: acuminProBold;
-    line-height: 30px;
+    font-size: 43px;
+    line-height: 45px;
 }
 
 .faq__titles h3{
@@ -1057,9 +1056,9 @@ hr.solid {
 .margin-left-faq{
     margin-left: auto;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .faq__titles h2 {
-        font-size: 24px;
+        font-size: 31px;
       }
 }
 /* call us */
