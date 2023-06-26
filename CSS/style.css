@@ -31,6 +31,30 @@
     src: url(../fonts/AcuminPro-Medium.otf);
 }
 
+/* Animaciones */
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.first-section h2{
+    transition-delay: 200ms;
+}
+.first-section p{
+    transition-delay: 400ms;
+}
+.botones__hero{
+    transition-delay: 600ms;
+}
+
 /* Globales */
 html{
     font-size: 62.5%;
