@@ -347,10 +347,12 @@ h1,h2,h3,h4,p{
     font-family: acuminProBold;
     font-size: 43px;
     margin-bottom: -5rem;
+    transition-delay: 1000ms;
 }
 .servicios_titulos h3{
     font-size: 18px;
     margin-bottom: .5rem;
+    transition-delay: 800ms;
 }
 
 .servicios{
@@ -370,6 +372,7 @@ h1,h2,h3,h4,p{
 /* Swiper custom */
 .swiper-custom {
     position: relative;
+    transition-delay: 1200ms;
 }
 
 .swiper-slide {
